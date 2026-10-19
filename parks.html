@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Neighborhood Walk</title>
- <link rel="stylesheet" href="css/style.css">
+  <title>Walks in the Park</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <!-- 1. Skip to Main Content link -->
+  <a href="#main" class="skip">Skip to Main Content</a>
+
   <header>
     <nav>
       <ul>
@@ -19,10 +22,12 @@
     </nav>
     <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
     <h1>Michigan Parks</h1>
-
   </header>
-  <main>
-    <div>
+
+  <!-- 2. Thêm id="main" vào thẻ main -->
+  <main id="main">
+    <!-- 3. Thêm class="flex" vào div chứa ảnh -->
+    <div class="flex">
       <img src="images/bacon_in_the_woods.png" alt="brown labradoodle sitting near a stream in a wooded setting"
         width="100">
       <img src="images/bacon_near_the_fort.png"
@@ -34,10 +39,9 @@
       <img src="images/mist_over_huron_river.JPG" alt="the mist rising over a river in the morning" width="100">
       <img src="images/munising.jpg" alt="small waterfall" width="100">
       <img src="images/reflected_tree.JPG" alt="reflection of a lake and trees" width="100">
-
     </div>
-
   </main>
+
   <footer>
     <p>This page was originally created by Colleen van Lent for the <a
         href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
