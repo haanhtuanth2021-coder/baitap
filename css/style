@@ -7,36 +7,19 @@ header {
   background-color: #f0f4f8;
 }
 
+/* YÊU CẦU 4: Thay đổi nav sử dụng inline-block và width khoảng 80% */
 nav {
   background-color: #2c3e50;
+  display: inline-block;
+  width: 80%;
+}
+
+/* YÊU CẦU 5: Dùng descendant selector để định dạng ảnh trong nav có width 10% */
+nav img {
+  width: 10%;
 }
 
 main {
   background-color: #ffffff;
   font-size: 18px;
 }
-
-footer {
-  background-color: #34495e;
-}
-
-li {
-  display: inline-block;
-  width: 150px;
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Georgia', serif;
-  color: #1a252f;
-}
-
-p {
-  line-height: 1.6;
-}
-nav a {
-    color: #ffffff;
-}
-
-footer {
-    color: #ffffff;
