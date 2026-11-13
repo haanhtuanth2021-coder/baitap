@@ -1,50 +1,58 @@
 
 body {
     background-color: #dedede;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family:Arial, sans-serif;
     font-size: 32px;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-    font-family:Arial, sans-serif;
-}
-
 p {
-   font-size: 25px;
-   font-family:Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
 
-img{
-  width:100%;
+/* Đảm bảo div hiển thị dạng khối nằm cạnh nhau */
+div {
+    display: inline-block;
+    width: 90%; /* Mặc định trên màn hình rất nhỏ */
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: top;
 }
 
-
-p{
-  text-align:center;
+/* Định dạng hình ảnh ban đầu và giới hạn chiều cao */
+div img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
-div img{
-    width:150px;
-    height: 150px;
-    display:block;
-    margin:auto;
+/* =========================================================
+   MEDIA QUERY 1: Kích hoạt khi màn hình từ 772px trở xuống
+   ========================================================= */
+@media screen and (max-width: 772px) {
+    div {
+        width: 45%; /* Chiếm 45% chiều rộng khung nhìn */
+    }
+    
+    div img {
+        max-height: 30vh; /* Chiều cao tối đa 30% của viewport height */
+    }
 }
 
-div{
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
+/* =========================================================
+   MEDIA QUERY 2: Kích hoạt khi màn hình từ 998px trở xuống
+   ========================================================= */
+@media screen and (max-width: 998px) {
+    div {
+        width: 30%; /* Chiếm 30% chiều rộng khung nhìn */
+    }
 }
-
-
-
 
 
 
