@@ -1,0 +1,175 @@
+
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family:Arial, sans-serif;
+}
+
+p {
+   font-size: 25px;
+   font-family:Arial, sans-serif;
+}
+
+img{
+  width:100%;
+}
+
+
+p{
+  text-align:center;
+}
+
+div img{
+    width:150px;
+    height: 150px;
+    display:block;
+    margin:auto;
+}
+
+div{
+  display: inline-block;
+  width: 24%;
+  margin: 5px;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+main {
+    border: 5px #000 solid;
+    margin: 10px;
+}
+ */
+/* 
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+ */
+/* img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+} */
+
+/* .child {
+    position: relative;
+    display: inline-block;
+    border: 5px black solid;
+    margin: 5px;
+    border-radius: 5px;
+} */
+
+/* 
+
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.button {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 25px;
+}
+ */
+/* 
+.button:hover {
+    background-color:#fff;
+} */
+
+/* 
+footer {
+    display: flex;
+    justify-content: center;
+} */
+
+/* 
+header {
+    border-radius: 5px;
+    border: 5px #000 solid;
+    margin: 10px;
+} */
+
+/* 
+.label {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+} */
+/* 
+.child:hover .label {
+    display: block;
+} */
+
+/* =========================================================
+   MEDIA QUERY 1: Cho màn hình máy tính bảng hoặc màn hình trung bình (<= 768px)
+   ========================================================= */
+@media screen and (max-width: 768px) {
+    div {
+        width: 48%; /* Chuyển từ 4 cột (24%) sang hiển thị 2 cột trên một hàng */
+    }
+    
+    img {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   MEDIA QUERY 2: Cho màn hình điện thoại di động nhỏ (<= 480px)
+   ========================================================= */
+@media screen and (max-width: 480px) {
+    div {
+        width: 100%; /* Chuyển thành hiển thị 1 cột duy nhất tràn màn hình trên điện thoại */
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 24px; /* Thu nhỏ tiêu đề cho vừa vặn màn hình điện thoại */
+    }
+
+    p {
+        font-size: 18px; /* Thu nhỏ cỡ chữ văn bản */
+    }
+}
